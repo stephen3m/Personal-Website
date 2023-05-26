@@ -97,27 +97,27 @@ body {
 }
 
 @keyframes topline0 {
-    0% {left: 1500px; top: 0px;}
-    25% {left: 900px; top:0px;}
-    50% {left: 800px; top:0px;}
-    75% {left: 950px; top:0px;}
-    100% {left: 1150px; top:0px;}
+    0% {left: 80%; top: 0px;}
+    25% {left: 73%; top:0px;}
+    50% {left: 65%; top:0px;}
+    75% {left: 62%; top:0px;}
+    100% {left: 60%; top:0px;}
 }
 
 @keyframes midline0 {
-    0% {left: 1500px; top: 0px;}
-    25% {left: 250px; top:0px;}
-    50% {left: 400px; top:0px;}
-    75% {left: 550px; top:0px;}
-    100% {left: 950px; top:0px;}
+    0% {left: 80%; top: 0px;}
+    25% {left: 20%; top:0px;}
+    50% {left: 30%; top:0px;}
+    75% {left: 45%; top:0px;}
+    100% {left: 50%; top:0px;}
 }
 
 @keyframes bottomline0 {
-    0% {left: 1500px; top: 0px;}
-    25% {left: 1300px; top:0px;}
-    50% {left: 1150px; top:0px;}
-    75% {left: 950px; top:0px;}
-    100% {left: 850px; top:0px;}
+    0% {left: 75%; top: 0px;}
+    25% {left: 77%; top:0px;}
+    50% {left: 60%px; top:0px;}
+    75% {left: 50%; top:0px;}
+    100% {left: 45%; top:0px;}
 }
 
 #home #homecontent p {
@@ -202,27 +202,27 @@ body {
 }
 
 @keyframes topline {
-    0% {left: 0px; top: 0px;}
-    25% {left: 250px; top:0px;}
-    50% {left: 400px; top:0px;}
-    75% {left: 550px; top:0px;}
-    100% {left: 700px; top:0px;}
+    0% {left: 5%; top: 0px;}
+    25% {left: 22%; top:0px;}
+    50% {left: 30%; top:0px;}
+    75% {left: 33%; top:0px;}
+    100% {left: 36%; top:0px;}
 }
 
 @keyframes midline {
-    0% {left: 0px; top: 0px;}
-    25% {left: 1200px; top:0px;}
-    50% {left: 1000px; top:0px;}
-    75% {left: 900px; top:0px;}
-    100% {left: 700px; top:0px;}
+    0% {left: 10%; top: 0px;}
+    25% {left: 75%; top:0px;}
+    50% {left: 62%; top:0px;}
+    75% {left: 53%; top:0px;}
+    100% {left: 37%; top:0px;}
 }
 
 @keyframes bottomline {
-    0% {left: 0px; top: 0px;}
-    25% {left: 950px; top:0px;}
-    50% {left: 800px; top:0px;}
-    75% {left: 750px; top:0px;}
-    100% {left: 700px; top:0px;}
+    0% {left: 2%; top: 0px;}
+    25% {left: 50%; top:0px;}
+    50% {left: 42%; top:0px;}
+    75% {left: 40%; top:0px;}
+    100% {left: 38%; top:0px;}
 }
 
 /* About */
@@ -259,14 +259,19 @@ body {
     font-family: Verdana;
     width: 85%;
     margin: 40px;
-    color:rgb(142, 249, 255);
     border-style: solid;
     border-color: rgb(132, 202, 255);
     text-align: center;
     padding-bottom: 450px;
 }
 
+#about #aboutme #introduction {
+    font-family: Arial;
+    color:rgb(142, 249, 255);
+}
+
 #about #aboutme h3 {
+    color:rgb(142, 249, 255);
     font-size: 50px;
     text-shadow: 2px 0 #ff82ff;
 }
@@ -316,11 +321,17 @@ body {
     font-family: 'Montserrat';
 }
 
+#skills #wakatime {
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
 #skills #words {
     font-weight: bold;
     font-size:50px;
     margin: 40px;
-    padding-top: 100px;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -338,9 +349,9 @@ body {
 
 #skills #proglang #proglangitems p {
     font-size: 25px;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: #cbfffd;
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
     min-width: 50px;
     text-align: center;
@@ -356,9 +367,9 @@ body {
 
 #skills #tools #toolsitems p {
     font-size: 25px;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: #cbfffd;
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
     min-width: 50px;
     text-align: center;
@@ -373,7 +384,6 @@ body {
 #projects {
     height: 920px;
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     justify-content: center;
@@ -389,6 +399,13 @@ body {
     text-align: center;
     font-family: 'Montserrat';
     font-weight: bold;
+    font-size: 50px;
+}
+
+#projects #reminder {
+    text-align: center;
+    font-size: 25px;
+    margin-top: -20px;
 }
 
 #projects #projectlist {
