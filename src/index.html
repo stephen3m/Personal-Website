@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="index.js"></script>
+    <title>Stephen's Portfolio</title>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="navbar">
+        <div class="navbaritem">
+            <a href="#contactme">Contact Me</a>
+        </div>
+        <div class="navbaritem">
+            <a href="#projects">Projects</a>
+        </div>
+        <div class="navbaritem">
+            <a href="#skills">Skills</a>
+        </div>
+        <div class="navbaritem">
+            <a href="#about">About</a>
+        </div>
+        <div class="navbaritem">
+            <a href="#home">Home</a>
+        </div>
+    </div>
+
+    <div id="home">
+        <div id="homecontent"> 
+            <p style = "font-size: 40px; padding-top: 250px;">Hello, I'm</p>
+            <p style = "font-size: 70px;">Stephen Ma</p>
+            <p style = "font-size: 50px;">Frontend Developer</p>
+        </div>
+    </div>
+    
+    <div id="about">
+        <div id="leftcolumn"></div>
+        <div id="aboutme">
+            <h3>ABOUT ME</h3>
+            <img src="../public/images/plopper.jfif">
+            <p>I’m currently a junior at the University of Minnesota, 
+                planning to pursue a B.S. in Computer Science. Download my resume here:</p>
+            <a href="../public/Resume.pdf" download="Resume">
+                <button type="resume-button">Resume</button>
+            </a>
+        </div>
+        <div id="rightcolumn"></div>
+    </div>
+
+    <div id="skills">
+        <div id="words">
+            <p>SKILLS</p>
+        </div>
+        <div id="proglang">
+            <h3>Programming Languages:</h3>
+            <div id="proglangitems">
+                <p>Python</p>
+                <p>Java</p>
+                <p>C</p>
+                <p>C++</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>OCaml</p>
+            </div>
+        </div>
+        <div id="tools">
+            <h3>Tools:</h3>
+            <div id="toolsitems"> 
+                <p>VS Code</p>
+                <p>Git</p>
+                <p>Intellij</p>
+                <p>Eclipse</p>
+                <p>GDB</p>
+                <p>GCC</p>
+                <p>Colaboratory</p>
+                <p>Linux</p>
+                <p>Raspberry Pi</p>
+                <p>Docker</p>
+                <p>Doxygen</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="projects">
+        <div id="projectwords">
+            <p style = "font-size: 50px;">PROJECTS</p>
+        </div>
+        <div id="projectlist">
+            <div class = "project">
+                <div class = "imgBx">
+                    <img src="/public/images/dronesim.png">
+                </div>
+                <div class = "content">
+                    <h2>Drone Simulation</h2>
+                    <p>An interactive simulation that allows the user to schedule drone trips to pick and drop off robots</p>
+                    <a href="https://github.umn.edu/umn-csci-3081-S23/Team-001-36-homework4" target="_blank" rel="noopener noreferrer">Github</a>
+                </div>
+            </div>
+            <div class = "project">
+                <div class = "imgBx">
+                    <img src="/public/images/gopherbin.jpg">
+                </div>
+                <div class = "content">
+                    <h2>Gopher Bin</h2>
+                    <p>A machine-learned waste categorizer that sorts objects based on their biodegradability</p>
+                    <a href="https://github.com/SASE-Labs-2022/Gopher-Bin" target="_blank" rel="noopener noreferrer">Github</a>
+                </div>
+            </div>
+            <div class = "project">
+                <div class = "imgBx">
+                    <img src="/public/images/fightinggame.png">
+                </div>
+                <div class = "content">
+                    <h2>Arcade Fighting Game</h2>
+                    <p>An animated, arcade fighting game with character sprites and basic fighting mechanics</p>
+                    <a href="https://github.com/stephen3m/Fighting_Game" target="_blank" rel="noopener noreferrer">Github</a>
+                </div>
+            </div>
+            <div class = "project">
+                <div class = "imgBx">
+                </div>
+                <div class = "content">
+                    <h2>Productivity Tracker</h2>
+                    <p>A website that helps track your productivity</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contactme">
+        <div id="words">
+            <p>Contact Me</p>
+        </div>
+        <div id="content">
+            <p>Email: stepheny3ma@gmail.com</p>
+            <a href = "mailto: stepheny3ma@gmail.com"> 
+                <button>Send email</button> 
+            </a>
+        </div>
+    </div>
+</body>
+</html>

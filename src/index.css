@@ -1,0 +1,356 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    margin: 0;
+    background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+#navbar {
+    background: linear-gradient(to right, #2314ff, #91dfe5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    opacity: 0.8;
+  }
+  
+#navbar a {
+    float: right;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Montserrat';
+  }
+  
+#navbar a:hover {
+    background-color: #cbfffd;
+    color: black;
+  }
+
+.navbaritem {
+    font-weight: bold;
+}
+
+/* Home */
+  
+#home {
+    height: 925px;
+    padding-top: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/public/images/bluebg.png');
+  }
+
+#home #homecontent p {
+    text-align: center;
+    margin: 40px;
+    margin-left: 100px;
+    color:rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-weight: 100;
+}
+
+/* About */
+
+#about {
+    height: 920px;
+    background: linear-gradient(to bottom, rgb(61, 52, 248), rgb(64, 147, 249));
+    margin-bottom: -50px;
+    display: flex;
+}
+
+#about #leftcolumn {
+    color:rgb(142, 249, 255);
+    border-style: solid;
+    border-color: rgb(132, 202, 255);
+    width: 90px;
+    margin: 40px;
+    background: linear-gradient(to bottom, rgb(61, 52, 248), rgb(142, 191, 255));
+}
+
+#about #rightcolumn {
+    color:rgb(142, 249, 255);
+    border-style: solid;
+    border-color: rgb(132, 202, 255);
+    width: 90px;
+    margin: 40px;
+    background-color: rgb(142, 249, 255);
+    background: linear-gradient(to bottom, rgb(61, 52, 248), rgb(142, 249, 255));
+}
+
+#about #aboutme {
+    font-family: 'Montserrat';
+    margin: 40px;
+    color:rgb(142, 249, 255);
+    border-style: solid;
+    border-color: rgb(132, 202, 255);
+    text-align: center;
+    padding-bottom: 450px;
+}
+
+#about #aboutme h3 {
+    font-size: 50px;
+    text-shadow: 2px 0 #ff82ff;
+}
+
+#about #aboutme p {
+    font-size: 25px;
+}
+
+#about #aboutme button {
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #02002d;
+    font-size: 24px;
+    background: linear-gradient(90deg,#cdcdfd, #61f1f9, #46fcdb, #b4f5b2);
+    background-size: 400%;
+    border-radius: 25px;
+    border-color: #f1ebff;
+    cursor: pointer;
+}
+
+#about button:hover {
+    animation: animateResButton 8s linear infinite;
+}
+
+@keyframes animateResButton {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+#about #aboutme img {
+    border-radius: 30px;
+}
+
+/* Skills */
+
+#skills {
+    height: 960px;
+    background: linear-gradient(to bottom, rgb(64, 147, 249), rgb(192, 255, 217));
+    font-family: 'Montserrat';
+}
+
+#skills #words {
+    font-weight: bold;
+    font-size:50px;
+    margin: 40px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+#skills #proglang {
+    margin-left: 100px;
+}
+
+#skills #proglang h3 {
+    font-size: 35px;
+}
+
+#skills #proglang #proglangitems {
+    display: flex;
+}
+
+#skills #proglang #proglangitems p {
+    font-size: 25px;
+    border-radius: 30px;
+    background-color: #cbfffd;
+    margin: 10px;
+    padding: 10px;
+    min-width: 50px;
+    text-align: center;
+}
+
+#skills #tools {
+    margin-left: 100px;
+}
+
+#skills #tools h3 {
+    font-size: 35px;
+}
+
+#skills #tools #toolsitems p {
+    font-size: 25px;
+    border-radius: 30px;
+    background-color: #cbfffd;
+    margin: 10px;
+    padding: 10px;
+    min-width: 50px;
+    text-align: center;
+}
+
+#skills #tools #toolsitems {
+    display: flex;
+}
+
+/* Projects */
+
+#projects {
+    height: 920px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgb(192, 255, 217), #ffeb3b);
+    gap: 100px 50px;
+    padding: 100px 50px;
+    margin-bottom: -50px;
+}
+
+#projects #projectwords {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+#projects #projectlist {
+    display: flex;
+}
+
+#projects #projectlist .project {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+    margin: 40px;
+    --clr: black;
+}
+
+#projects #projectlist .project:hover {
+    height: 400px;
+}
+
+#projects #projectlist .project .imgBx {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+#projects #projectlist .project:hover .imgBx {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+}
+
+#projects #projectlist .project .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#projects #projectlist .project .content {
+    position: absolute;
+    /* space between image and content text */
+    top: 232px;
+    width: 100%;
+    padding: 0 30px;
+    /* how much of text is visible when not hovered */
+    height: 45px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#projects #projectlist .project:hover .content {
+    height: 250px;
+    top: 130px;
+}
+
+#projects #projectlist .project .content h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+#projects #projectlist .project .content p {
+    color: #333;
+}
+
+#projects #projectlist .project .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--clr);
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* Contact me */
+
+#contactme {
+    height: 920px;
+    background: linear-gradient(to bottom, #ffeb3b,#ffd693);
+    font-family: 'Montserrat';
+}
+
+#contactme #words {
+    text-align: center;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+#contactme #content {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 500px;
+    font-size: 40px;
+    border-style: solid;
+}
+
+
+#contactme #content button {
+    font-size: 30px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, rgb(255, 250, 187), rgb(255, 205, 143));
+    padding: 10px;
+}
+
+#contactme #content button:hover {
+    background: linear-gradient(45deg, rgb(255, 253, 221), rgb(255, 227, 194));
+    cursor: pointer;
+}
