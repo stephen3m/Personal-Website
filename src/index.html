@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="index.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="icon" type="icon" href="../public/favicon.ico">
-    <script src="index.js"></script>
     <title>Stephen's Portfolio</title>
 </head>
 <body>
@@ -31,11 +30,17 @@
     </div>
 
     <div id="home">
+        <div class="toprectangle" id="topline0"></div>
+        <div class="toprectangle" id="midline0"></div>
+        <div class="toprectangle" id="bottomline0"></div>
         <div id="homecontent"> 
-            <p style = "font-size: 40px; padding-top: 250px;">Hello, I'm</p>
-            <p style = "font-size: 70px;">Stephen Ma</p>
-            <p style = "font-size: 50px;">Frontend Developer</p>
+            <p id="line1">Hello, I'm</p>
+            <p id="line2">Stephen Ma</p>
+            <p id="line3">Full Stack Developer</p>
         </div>
+        <div class="bottomrectangle" id="topline"></div>
+        <div class="bottomrectangle" id="midline"></div>
+        <div class="bottomrectangle" id="bottomline"></div>
     </div>
     
     <div id="about">
@@ -43,8 +48,8 @@
         <div id="aboutme">
             <h3>ABOUT ME</h3>
             <img src="../public/images/plopper.jfif">
-            <p>I’m currently a junior at the University of Minnesota, 
-                planning to pursue a B.S. in Computer Science. Download my resume here:</p>
+            <p style="font-family: Calibri">I’m currently a junior at the University of Minnesota, 
+                planning to pursue a B.S. in Computer Science. <br> Download my resume here:</p>
             <a href="../public/Resume.pdf" download="Resume">
                 <button type="resume-button">Resume</button>
             </a>
@@ -144,5 +149,6 @@
             </a>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
