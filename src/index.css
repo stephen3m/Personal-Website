@@ -244,7 +244,8 @@ body {
     margin: 40px;
     float: left;
     /* background: linear-gradient(to bottom, rgb(61, 52, 248), rgb(142, 191, 255)); */
-    background: linear-gradient(to bottom, rgb(9, 4, 102), rgb(64, 87, 255));
+    /* background: linear-gradient(to bottom, rgb(9, 4, 102), rgb(64, 87, 255)); */
+    background: linear-gradient(to bottom, rgb(9, 4, 102), rgb(242, 64, 255),rgb(9, 4, 102));
 }
 
 #about #rightcolumn {
@@ -255,7 +256,7 @@ body {
     margin: 40px;
     float: right;
     background-color: rgb(142, 249, 255);
-    background: linear-gradient(to bottom, rgb(9, 4, 102), rgb(64, 87, 255));
+    background: linear-gradient(to bottom, rgb(9, 4, 102), rgb(242, 64, 255),rgb(9, 4, 102));
 }
 
 #about #aboutme {
@@ -264,18 +265,24 @@ body {
     margin: 40px;
     border-style: solid;
     border-color: rgb(132, 202, 255);
-    text-align: left;
+    text-align: center;
     padding-left: 50px;
     padding-bottom: 450px;
     border-radius: 20px;
-    background-image: url('../public/images/windows.png');
+    background-image: url('../public/images/aboutmebg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #about #aboutme #introduction {
     font-family: system-ui;
-    color:rgb(142, 249, 255);
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    background-color: rgb(235, 190, 255);
+    opacity: 0.75;
+    border-radius: 30px;
+    margin-right: 50px;
+    padding: 10px;
 }
 
 #about #aboutme h3 {
@@ -297,7 +304,7 @@ body {
     line-height: 60px;
     color: #02002d;
     font-size: 24px;
-    background: linear-gradient(90deg,#cdcdfd, #61f1f9, #46fcdb, #b4f5b2);
+    background: linear-gradient(90deg,#cdcdfd, #61f1f9, #46dbfc, #edb2f5);
     background-size: 400%;
     border-radius: 15px;
     border-color: #f1ebff;
@@ -664,6 +671,22 @@ body {
 .contactForm .inputBox input[type="submit"]:hover {
 	background: #fff7db;
 	color: rgb(0, 0, 0);
+}
+
+#contact .container .contactinfo .box .icon:hover {
+    cursor: pointer;
+}
+
+#contact .container .contactInfo .box #email:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+#contact .container .contactInfo .box #linkedin:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+#contact .container .contactInfo .box #github:hover {
+    background-color: rgb(212, 212, 212);
 }
 
 @media (max-width: 991px) {
