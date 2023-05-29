@@ -244,8 +244,8 @@ body {
     margin: 40px;
     float: left;
     /* background: linear-gradient(to bottom, rgb(61, 52, 248), rgb(142, 191, 255)); */
-    /* background: linear-gradient(to bottom, rgb(9, 4, 102), rgb(64, 87, 255)); */
-    background: linear-gradient(to bottom, rgb(9, 4, 102), rgb(242, 64, 255),rgb(9, 4, 102));
+    background: linear-gradient(to bottom, rgb(9, 4, 102), rgb(79, 86, 228));
+    /* background: linear-gradient(to bottom, rgb(9, 4, 102), rgb(242, 64, 255),rgb(9, 4, 102)); */
 }
 
 #about #rightcolumn {
@@ -256,7 +256,7 @@ body {
     margin: 40px;
     float: right;
     background-color: rgb(142, 249, 255);
-    background: linear-gradient(to bottom, rgb(9, 4, 102), rgb(242, 64, 255),rgb(9, 4, 102));
+    background: linear-gradient(to bottom, rgb(9, 4, 102), rgb(79, 206, 228));
 }
 
 #about #aboutme {
@@ -269,7 +269,7 @@ body {
     padding-left: 50px;
     padding-bottom: 450px;
     border-radius: 20px;
-    background-image: url('../public/images/aboutmebg.jpg');
+    background-image: url('../public/images/blue5.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -278,7 +278,7 @@ body {
     font-family: system-ui;
     color:rgb(0, 0, 0);
     font-size: 30px;
-    background-color: rgb(235, 190, 255);
+    background-color: rgb(190, 215, 255);
     opacity: 0.75;
     border-radius: 30px;
     margin-right: 50px;
@@ -293,6 +293,11 @@ body {
 
 #about #aboutme p {
     font-size: 25px;
+}
+
+#about #aboutme img {
+    height: 250px;
+
 }
 
 #about #aboutme button {
@@ -545,7 +550,7 @@ body {
 
 #contact .content
 {
-	max-width: 800px;
+	max-width: 1000px;
 	text-align: center;
 }
 
@@ -557,7 +562,7 @@ body {
 
 #contact .content p {
 	font-weight: 300;
-	color: white;
+	color: rgb(0, 0, 0);
 }
 
 .container {
@@ -589,6 +594,10 @@ body {
 	align-items: center;
 	border-radius: 50%;
 	font-size: 22px;
+}
+
+.container .contactInfo .box .icon:hover {
+	background-color: rgb(198, 198, 198);
 }
 
 .container .contactInfo .box .text{
@@ -671,22 +680,6 @@ body {
 .contactForm .inputBox input[type="submit"]:hover {
 	background: #fff7db;
 	color: rgb(0, 0, 0);
-}
-
-#contact .container .contactinfo .box .icon:hover {
-    cursor: pointer;
-}
-
-#contact .container .contactInfo .box #email:hover {
-    background-color: rgb(212, 212, 212);
-}
-
-#contact .container .contactInfo .box #linkedin:hover {
-    background-color: rgb(212, 212, 212);
-}
-
-#contact .container .contactInfo .box #github:hover {
-    background-color: rgb(212, 212, 212);
 }
 
 @media (max-width: 991px) {
