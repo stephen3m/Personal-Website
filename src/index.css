@@ -32,7 +32,7 @@ body {
     padding-top: 9px;
     padding-bottom: 9px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     font-family: 'Montserrat';
   }
   
@@ -40,16 +40,16 @@ body {
     background-color: #0e001f;
     color: rgb(103, 255, 237);
     border-radius: 10px;
-  }
+}
 
-.navbaritem {
-    font-weight: bold;
+#contact-me-words {
+    margin-right: 15px;
 }
 
 /* Home */
   
 #home {
-    height: 925px;
+    height: 100vh;
     padding-top: 50px;
     background-attachment: fixed;
     background-position: center;
@@ -122,6 +122,10 @@ body {
     100% {left: 45%; top:0px;}
 }
 
+#homecontent {
+    margin-top: 8vh;
+}
+
 #home #homecontent p {
     text-align: center;
     margin-left: 100px;
@@ -136,7 +140,7 @@ body {
     color:rgb(255, 255, 255);
     font-family: 'Montserrat';
     font-weight: 100;
-    font-size: 35px; 
+    font-size: 2vw; 
     text-shadow: 3px 0 #2112ad;
     margin-bottom: -30px;
 }
@@ -148,7 +152,7 @@ body {
     color:rgb(255, 255, 255);
     font-family: 'Montserrat';
     font-weight: 100;
-    font-size: 70px; 
+    font-size: 4vw; 
     font-family: Verdana; 
     text-shadow: 4px 0 #2112ad;
 }
@@ -160,7 +164,7 @@ body {
     color:rgb(255, 255, 255);
     font-family: 'Montserrat';
     font-weight: 100;
-    font-size: 50px; 
+    font-size: 2vw; 
     text-shadow: 3px 0 #2112ad;
 }
 
@@ -230,7 +234,7 @@ body {
 /* About */
 
 #about {
-    height: 920px;
+    height: 100vh;
     background: linear-gradient(to bottom, rgb(61, 52, 248), rgb(64, 147, 249));
     margin-bottom: -50px;
     display: flex;
@@ -239,7 +243,7 @@ body {
 #about #leftcolumn {
     color:rgb(142, 249, 255);
     border-style: solid;
-    border-color: rgb(132, 202, 255);
+    border-color: rgb(1, 28, 49);
     width: 90px;
     margin: 40px;
     float: left;
@@ -249,9 +253,8 @@ body {
 }
 
 #about #rightcolumn {
-    color:rgb(142, 249, 255);
     border-style: solid;
-    border-color: rgb(132, 202, 255);
+    border-color: rgb(1, 28, 49);
     width: 90px;
     margin: 40px;
     float: right;
@@ -260,7 +263,7 @@ body {
 }
 
 #about #aboutme {
-    font-family: Verdana;
+    font-family: Arial;
     width: 85%;
     margin: 40px;
     border-style: solid;
@@ -275,49 +278,77 @@ body {
 }
 
 #about #aboutme #introduction {
-    font-family: system-ui;
+    font-family: sans-serif;
     color:rgb(0, 0, 0);
     font-size: 30px;
+    height: 33vh;
+    display: flex;
+    align-items: center;
     background-color: rgb(190, 215, 255);
     opacity: 0.75;
     border-radius: 30px;
     margin-right: 50px;
-    padding: 10px;
+    margin-left: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #about #aboutme h3 {
-    color:rgb(142, 249, 255);
+    color:rgb(216, 253, 255);
     font-size: 50px;
-    text-shadow: 2px 0 #ff82ff;
+    text-shadow: 2px 0 #0e286e;
 }
 
 #about #aboutme p {
     font-size: 25px;
 }
 
-#about #aboutme img {
-    height: 250px;
+#aboutme-img-and-text {
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+}
 
+#about #aboutme img {
+    height: 40vh;
+    border: 1px solid rgb(190, 202, 255);
+    border-radius: 30px;
 }
 
 #about #aboutme button {
+    font-family: sans-serif;
     top: 50%;
     left: 50%;
-    width: 200px;
-    height: 60px;
+    padding: 1px 35px;
     text-align: center;
     line-height: 60px;
     color: #02002d;
     font-size: 24px;
-    background: linear-gradient(90deg,#cdcdfd, #61f1f9, #46dbfc, #edb2f5);
+    background: linear-gradient(90deg,#2576da, #61f9ec, #fafbb1, #61f9ec, #2576da);
     background-size: 400%;
     border-radius: 15px;
-    border-color: #f1ebff;
+    border-color: #ffffff;
     cursor: pointer;
 }
 
 #about button:hover {
     animation: animateResButton 8s linear infinite;
+}
+
+#resume-div {
+    font-family: 'Gill Sans';
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    background-color: rgb(190, 230, 255);
+    opacity: 0.85;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 40px;
+    margin-top: 30px;
 }
 
 @keyframes animateResButton {
@@ -329,14 +360,10 @@ body {
     }
 }
 
-#about #aboutme img {
-    border-radius: 30px;
-}
-
 /* Skills */
 
 #skills {
-    height: 960px;
+    height: 100vh;
     background: linear-gradient(to bottom, rgb(64, 147, 249), rgb(192, 255, 217));
     font-family: 'Montserrat';
 }
@@ -410,7 +437,7 @@ body {
 /* Projects */
 
 #projects {
-    height: 920px;
+    height: 100vh;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
