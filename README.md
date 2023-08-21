@@ -1,4 +1,5 @@
 # Personal Portfolio Website
+To view my website, visit either https://stephenma.netlify.app/ (deployed with Netlify) or ambitious-moss-0a7a20a10.3.azurestaticapps.net (deployed with Azure).
 
 ## Table of Contents
 
