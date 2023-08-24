@@ -374,17 +374,36 @@ body {
 }
 
 #skills #wakatime {
-    height: 350px;
+    height: 40%;
     margin-top: 50px;
     margin-left: 100px;
 }
 
-#skills #words {
-    font-weight: bold;
-    font-size:50px;
-    margin: 40px;
-    padding-top: 20px;
-    text-align: center;
+#skills-heading {
+  font-weight: bold;
+  font-size:50px;
+  margin: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+#skills-heading::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(181, 240, 255);
+  opacity: 0.20;
+  content: '';
+  transition: width 0.6s;
+}
+
+#skills-heading:hover::before {
+  width: 100%;
 }
 
 #skills #proglang {
@@ -460,7 +479,28 @@ body {
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 50px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+  
+  #projectwords::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(97, 208, 158);
+    opacity: 0.20;
+    content: '';
+    transition: width 0.6s;
+  }
+  
+  #projectwords:hover::before {
+    width: 100%;
+  }
 
 #projects #reminder {
     text-align: center;
