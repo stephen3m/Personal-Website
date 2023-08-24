@@ -20,6 +20,7 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     opacity: 0.8;
+    z-index: 1000;
   }
   
 #navbar a {
@@ -373,18 +374,31 @@ body {
     font-family: 'Montserrat';
 }
 
+#wakatime-div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: 5%;
+    padding-bottom: 10px;
+    width: 90vw;
+    position: relative;
+}
+
 #skills #wakatime {
     height: 40%;
     margin-top: 50px;
     margin-left: 100px;
+    width: 30%;
 }
 
 #skills-heading {
   font-weight: bold;
   font-size:50px;
   margin: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   align-items: center;
   position: relative;
@@ -404,6 +418,10 @@ body {
 
 #skills-heading:hover::before {
   width: 100%;
+}
+
+#skills hr {
+    border-color: black;
 }
 
 #skills #proglang {
