@@ -1,5 +1,5 @@
 # Personal Portfolio Website
-To view my website, visit [this link] (ambitious-moss-0a7a20a10.3.azurestaticapps.net)(deployed with Azure).
+To view my website, visit [this link] (http://ambitious-moss-0a7a20a10.3.azurestaticapps.net)(deployed with Azure).
 
 ## Table of Contents
 
