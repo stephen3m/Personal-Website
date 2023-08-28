@@ -375,15 +375,28 @@ body {
 }
 
 #wakatime-div {
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    border: 1px solid black;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 5%;
     padding-bottom: 10px;
     width: 90vw;
-    position: relative;
+    border-radius: 8px;
+    background-color: black;
+    background: linear-gradient(-45deg, rgb(64, 147, 249), rgb(192, 255, 217), rgb(64, 160, 249));
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 #skills #wakatime {
